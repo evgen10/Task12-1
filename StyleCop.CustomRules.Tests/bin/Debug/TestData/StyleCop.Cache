@@ -32,10 +32,6 @@
       </violation>
     </violations>
   </sourcecode>
-  <project key="1">
-    <configuration>
-    </configuration>
-  </project>
   <sourcecode name="Ctrl.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2014.04.01 10:19:02.000</styleCop>
@@ -51,6 +47,83 @@
       <violation namespace="StyleCop.CustomRules.ControllerNameRule" rule="ControllerNameRule" ruleCheckId="EP1001">
         <context>LAlalalla '...TTT'</context>
         <line>1</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="ControllerNameRight.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2014.04.01 10:19:02.000</styleCop>
+      <settingsFile>2016.11.01 11:14:31.445</settingsFile>
+      <sourceFile>2019.06.10 22:39:12.684</sourceFile>
+      <parser>2014.04.01 10:19:02.000</parser>
+      <StyleCop.CustomRules.ControllerNameRule>2014.04.01 10:19:02.000</StyleCop.CustomRules.ControllerNameRule>
+      <StyleCop.CustomRules.ControllerNameRule.FilesHashCode>0</StyleCop.CustomRules.ControllerNameRule.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ControllerNameWrong.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2014.04.01 10:19:02.000</styleCop>
+      <settingsFile>2016.11.01 11:14:31.445</settingsFile>
+      <sourceFile>2019.06.10 22:48:46.750</sourceFile>
+      <parser>2014.04.01 10:19:02.000</parser>
+      <StyleCop.CustomRules.ControllerNameRule>2014.04.01 10:19:02.000</StyleCop.CustomRules.ControllerNameRule>
+      <StyleCop.CustomRules.ControllerNameRule.FilesHashCode>0</StyleCop.CustomRules.ControllerNameRule.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CustomRules.ControllerNameRule" rule="ControllerNameRule" ruleCheckId="EP1001">
+        <context>LAlalalla '...TTT'</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <sourcecode name="ControllersMethodHasAtribute.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2014.04.01 10:19:02.000</styleCop>
+      <settingsFile>2016.11.01 11:14:31.445</settingsFile>
+      <sourceFile>2019.06.10 23:47:27.751</sourceFile>
+      <parser>2014.04.01 10:19:02.000</parser>
+      <StyleCop.CustomRules.ControllerNameRule>2014.04.01 10:19:02.000</StyleCop.CustomRules.ControllerNameRule>
+      <StyleCop.CustomRules.ControllerNameRule.FilesHashCode>0</StyleCop.CustomRules.ControllerNameRule.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ControllerHasNotAttribute.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2014.04.01 10:19:02.000</styleCop>
+      <settingsFile>2016.11.01 11:14:31.445</settingsFile>
+      <sourceFile>2019.06.10 23:55:19.064</sourceFile>
+      <parser>2014.04.01 10:19:02.000</parser>
+      <StyleCop.CustomRules.ControllerNameRule>2014.04.01 10:19:02.000</StyleCop.CustomRules.ControllerNameRule>
+      <StyleCop.CustomRules.ControllerNameRule.FilesHashCode>0</StyleCop.CustomRules.ControllerNameRule.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CustomRules.ControllerNameRule" rule="ControllerAttributeRule" ruleCheckId="EP1002">
+        <context>TTTTTTTTTT</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <project key="1">
+    <configuration>
+    </configuration>
+  </project>
+  <sourcecode name="ControllerHasAttribute.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2014.04.01 10:19:02.000</styleCop>
+      <settingsFile>2016.11.01 11:14:31.445</settingsFile>
+      <sourceFile>2019.06.10 23:55:19.038</sourceFile>
+      <parser>2014.04.01 10:19:02.000</parser>
+      <StyleCop.CustomRules.ControllerNameRule>2014.04.01 10:19:02.000</StyleCop.CustomRules.ControllerNameRule>
+      <StyleCop.CustomRules.ControllerNameRule.FilesHashCode>0</StyleCop.CustomRules.ControllerNameRule.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CustomRules.ControllerNameRule" rule="ControllerAttributeRule" ruleCheckId="EP1002">
+        <context>TTTTTTTTTT</context>
+        <line>2</line>
         <warning>False</warning>
       </violation>
     </violations>

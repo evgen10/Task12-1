@@ -40,43 +40,68 @@ namespace StyleCop.CustomRules.Tests
 		}
 
 		[TestMethod]
-		public void RightEnumName()
+		public void RightCtrlName()
 		{
 			var project = new CodeProject(1, @".\TestData", new Configuration(new string[] { "DEBUG" }));
-			scConsole.Core.Environment.AddSourceCode(project, @".\TestData\Enum_Right.cs", null);
+			scConsole.Core.Environment.AddSourceCode(project, @".\TestData\ControllerNameRight.cs", null);
 
 			scConsole.Start(new List<CodeProject>() { project }, true);
 
 			Assert.AreEqual(0, violationList.Count);
 
-		}
-
-		[TestMethod]
-		public void WrongEnumName()
-		{
-			var project = new CodeProject(1, @".\TestData", new Configuration(new string[] { }));
-			scConsole.Core.Environment.AddSourceCode(project, @".\TestData\Enum_Wrong.cs", null);
-
-			scConsole.Start(new List<CodeProject>() { project }, true);
-
-			Assert.AreEqual(1, violationList.Count);
-			var violation = violationList.First();
-			Assert.AreEqual("EP1000", violation.Rule.CheckId);
-
-		}
+		}		
 
         [TestMethod]
         public void WrongCtrlName()
         {
             var project = new CodeProject(1, @".\TestData", new Configuration(new string[] { }));
-            scConsole.Core.Environment.AddSourceCode(project, @".\TestData\Ctrl.cs", null);
+            scConsole.Core.Environment.AddSourceCode(project, @".\TestData\ControllerNameWrong.cs", null);
 
             scConsole.Start(new List<CodeProject>() { project }, true);
 
             Assert.AreEqual(1, violationList.Count);
             var violation = violationList.First();
             Assert.AreEqual("EP1001", violation.Rule.CheckId);
-
         }
+
+        [TestMethod]
+        public void RightCtrlAttribute()
+        {
+            var project = new CodeProject(1, @".\TestData", new Configuration(new string[] { }));
+            scConsole.Core.Environment.AddSourceCode(project, @".\TestData\ControllerHasAttribute.cs", null);
+
+            scConsole.Start(new List<CodeProject>() { project }, true);
+
+            Assert.AreEqual(0, violationList.Count);
+        }
+
+        [TestMethod]
+        public void RightCtrlAttributeOnMethods()
+        {
+            var project = new CodeProject(1, @".\TestData", new Configuration(new string[] { }));
+            scConsole.Core.Environment.AddSourceCode(project, @".\TestData\ControllersMethodHasAtribute.cs", null);
+
+            scConsole.Start(new List<CodeProject>() { project }, true);
+
+            Assert.AreEqual(0, violationList.Count);
+        }
+
+        [TestMethod]
+        public void WrongCtrlAttribute()
+        {
+            var project = new CodeProject(1, @".\TestData", new Configuration(new string[] { }));
+            scConsole.Core.Environment.AddSourceCode(project, @".\TestData\ControllerHasNotAttribute.cs", null);
+
+            scConsole.Start(new List<CodeProject>() { project }, true);
+
+            Assert.AreEqual(1, violationList.Count);
+            var violation = violationList.First();
+            Assert.AreEqual("EP1002", violation.Rule.CheckId);
+        }
+
+
+
+
+
     }
 }

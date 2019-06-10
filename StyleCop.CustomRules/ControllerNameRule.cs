@@ -13,6 +13,7 @@ namespace StyleCop.CustomRules
     {
         const string ruleName = "ControllerNameRule";
 
+
         public override void AnalyzeDocument(CodeDocument document)
         {
             CsDocument csDocument = (CsDocument)document;
@@ -26,16 +27,46 @@ namespace StyleCop.CustomRules
 
             if (cls != null)
             {
-                if (cls.BaseClass == "System.Web.Mvc.Controller" && !cls.Name.EndsWith("Controller", System.StringComparison.Ordinal))
-                {
-                    this.AddViolation(element, ruleName);                  
+                ControllerNameRule1(cls);
+                ControllerAttributeRule(cls);
 
-                }
 
                 return false;
             }
 
             return true;
+        }
+
+        private void ControllerNameRule1(Class element)
+        {
+            if (element.BaseClass == "System.Web.Mvc.Controller" && !element.Name.EndsWith("Controller", System.StringComparison.Ordinal))
+            {
+                this.AddViolation(element, ruleName);
+            }
+
+        }
+
+        private void ControllerAttributeRule(Class element)
+        {
+            bool isController = element.BaseClass == "System.Web.Mvc.Controller";
+                                               
+            if (isController)
+            {
+                foreach (Method item in element.ChildElements.Where(i=>i is Method))
+                {
+                    if (item.AccessModifier == AccessModifierType.Public && item.Attributes.Where(i => i.Text == "[System.Web.Mvc.Authorize]").Count() == 0)
+                    {
+                        this.AddViolation(element, "ControllerAttributeRule");
+                        return;
+                    }
+                }
+
+                if (element.Attributes.FirstOrDefault(a => a.Text == "[System.Web.Mvc.Authorize]") != null)
+                {
+                    this.AddViolation(element, "ControllerAttributeRule");
+                } 
+                
+            }
         }
     }
 }

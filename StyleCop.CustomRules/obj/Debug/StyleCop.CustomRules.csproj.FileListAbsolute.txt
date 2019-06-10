@@ -14,3 +14,10 @@ C:\Users\iammr\OneDrive\Рабочий стол\StyleCop\StyleCop.CustomRules\ob
 C:\Users\iammr\OneDrive\Рабочий стол\StyleCop\StyleCop.CustomRules\obj\Debug\StyleCop.CustomRules.dll
 C:\Users\iammr\OneDrive\Рабочий стол\StyleCop\StyleCop.CustomRules\obj\Debug\StyleCop.CustomRules.pdb
 C:\Users\iammr\OneDrive\Рабочий стол\StyleCop\StyleCop.CustomRules\obj\Debug\StyleCop.CustomRules.csprojAssemblyReference.cache
+C:\Users\iammr\OneDrive\Рабочий стол\Новая папка (2)\StyleCop.CustomRules\bin\Debug\StyleCop.CustomRules.dll
+C:\Users\iammr\OneDrive\Рабочий стол\Новая папка (2)\StyleCop.CustomRules\bin\Debug\StyleCop.CustomRules.pdb
+C:\Users\iammr\OneDrive\Рабочий стол\Новая папка (2)\StyleCop.CustomRules\obj\Debug\StyleCop.CustomRules.csprojAssemblyReference.cache
+C:\Users\iammr\OneDrive\Рабочий стол\Новая папка (2)\StyleCop.CustomRules\obj\Debug\StyleCop.CustomRules.csproj.CoreCompileInputs.cache
+C:\Users\iammr\OneDrive\Рабочий стол\Новая папка (2)\StyleCop.CustomRules\obj\Debug\StyleCop.CustomRules.csproj.CopyComplete
+C:\Users\iammr\OneDrive\Рабочий стол\Новая папка (2)\StyleCop.CustomRules\obj\Debug\StyleCop.CustomRules.dll
+C:\Users\iammr\OneDrive\Рабочий стол\Новая папка (2)\StyleCop.CustomRules\obj\Debug\StyleCop.CustomRules.pdb

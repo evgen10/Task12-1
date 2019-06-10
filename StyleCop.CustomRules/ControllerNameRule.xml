@@ -8,5 +8,9 @@
       <Context>LAlalalla '...TTT'</Context>
       <Description>fasdf asdf asdf asdf </Description>
     </Rule>
+    <Rule Name="ControllerAttributeRule" CheckId="EP1002">
+      <Context>TTTTTTTTTT</Context>
+      <Description>DDDDDDDDDDD </Description>
+    </Rule>
   </Rules>
 </SourceAnalyzer>
