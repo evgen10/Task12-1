@@ -1,0 +1,58 @@
+<stylecopresultscache>
+  <version>12</version>
+  <sourcecode name="Enum_Right.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2014.04.01 10:19:02.000</styleCop>
+      <settingsFile>2016.11.01 11:14:31.445</settingsFile>
+      <sourceFile>2019.06.09 17:21:57.804</sourceFile>
+      <parser>2014.04.01 10:19:02.000</parser>
+      <StyleCop.CustomRules.ControllerNameRule>2014.04.01 10:19:02.000</StyleCop.CustomRules.ControllerNameRule>
+      <StyleCop.CustomRules.ControllerNameRule.FilesHashCode>0</StyleCop.CustomRules.ControllerNameRule.FilesHashCode>
+      <StyleCop.CustomRules.EnumPostfixRule>2014.04.01 10:19:02.000</StyleCop.CustomRules.EnumPostfixRule>
+      <StyleCop.CustomRules.EnumPostfixRule.FilesHashCode>0</StyleCop.CustomRules.EnumPostfixRule.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Enum_Wrong.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2014.04.01 10:19:02.000</styleCop>
+      <settingsFile>2016.11.01 11:14:31.445</settingsFile>
+      <sourceFile>2019.06.09 17:44:26.831</sourceFile>
+      <parser>2014.04.01 10:19:02.000</parser>
+      <StyleCop.CustomRules.ControllerNameRule>2014.04.01 10:19:02.000</StyleCop.CustomRules.ControllerNameRule>
+      <StyleCop.CustomRules.ControllerNameRule.FilesHashCode>0</StyleCop.CustomRules.ControllerNameRule.FilesHashCode>
+      <StyleCop.CustomRules.EnumPostfixRule>2014.04.01 10:19:02.000</StyleCop.CustomRules.EnumPostfixRule>
+      <StyleCop.CustomRules.EnumPostfixRule.FilesHashCode>0</StyleCop.CustomRules.EnumPostfixRule.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CustomRules.EnumPostfixRule" rule="EnumPostfixRule" ruleCheckId="EP1000">
+        <context>Enum name must ended to '...Enum'</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <project key="1">
+    <configuration>
+    </configuration>
+  </project>
+  <sourcecode name="Ctrl.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2014.04.01 10:19:02.000</styleCop>
+      <settingsFile>2016.11.01 11:14:31.445</settingsFile>
+      <sourceFile>2019.06.09 18:08:05.353</sourceFile>
+      <parser>2014.04.01 10:19:02.000</parser>
+      <StyleCop.CustomRules.ControllerNameRule>2014.04.01 10:19:02.000</StyleCop.CustomRules.ControllerNameRule>
+      <StyleCop.CustomRules.ControllerNameRule.FilesHashCode>0</StyleCop.CustomRules.ControllerNameRule.FilesHashCode>
+      <StyleCop.CustomRules.EnumPostfixRule>2014.04.01 10:19:02.000</StyleCop.CustomRules.EnumPostfixRule>
+      <StyleCop.CustomRules.EnumPostfixRule.FilesHashCode>0</StyleCop.CustomRules.EnumPostfixRule.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CustomRules.ControllerNameRule" rule="ControllerNameRule" ruleCheckId="EP1001">
+        <context>LAlalalla '...TTT'</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+</stylecopresultscache>

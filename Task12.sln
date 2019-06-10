@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StyleCop.CustomRules", "StyleCop.CustomRules\StyleCop.CustomRules.csproj", "{AE109755-BAD8-4660-A861-241B231F97CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StyleCop.CustomRules.Tests", "StyleCop.CustomRules.Tests\StyleCop.CustomRules.Tests.csproj", "{0C62462A-28A5-4AE9-BABA-D7F4CC70041C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE109755-BAD8-4660-A861-241B231F97CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE109755-BAD8-4660-A861-241B231F97CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE109755-BAD8-4660-A861-241B231F97CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE109755-BAD8-4660-A861-241B231F97CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C62462A-28A5-4AE9-BABA-D7F4CC70041C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C62462A-28A5-4AE9-BABA-D7F4CC70041C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C62462A-28A5-4AE9-BABA-D7F4CC70041C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C62462A-28A5-4AE9-BABA-D7F4CC70041C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A0A7ABA-8FF1-4E30-AC49-8251ACE45D92}
+	EndGlobalSection
+EndGlobal
